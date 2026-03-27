@@ -14,7 +14,7 @@ st.write("Upload an image to detect Mask / No Mask")
 # ----------------------------
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("mask_detector_model.h5")
+    return tf.keras.models.load_model("mask_detector_model.keras",compile=False)
 
 model = load_model()
 
